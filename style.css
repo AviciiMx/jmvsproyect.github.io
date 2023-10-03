@@ -960,6 +960,14 @@ footer .arriba:hover{
     .nav-responsive{
         display: block;
     }
+       .col ul li .mx{
+      
+        width: 100%;
+    }
+    .col ul li strong{
+      
+        width: 100%;
+    }
     nav.responsive{
         display: block;
         position: absolute;
@@ -983,14 +991,6 @@ footer .arriba:hover{
 @media screen and (max-width:700px) {
     .sobremi .fila{
         display: block;
-    }
-    .col ul li .mx{
-      
-        width: 100%;
-    }
-    .col ul li strong{
-      
-        width: 100%;
     }
     .sobremi .fila .col{
         width: fit-content;
