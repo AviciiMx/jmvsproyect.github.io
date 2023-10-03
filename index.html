@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- En el <head> de tu HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/fe3f9d5a63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+  
+    <title>Proyectos digitales</title>
+</head>
+<body>
+    <!-- Menu encabezado -->
+    <div class="container-header">
+        <header >
+            <div class="logo">
+                <a href="index.html">JUAN MANUEL VILLAR SANCHEZ</a>
+            </div> 
+            <nav id="nav">
+               <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skill" onclick="seleccionar()" >HABILIDADES</a></li>
+            <li><a href="#pro" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#demo" onclick="seleccionar()">PROYECTOS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+               </ul>
+
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION DE INICIO -->
+    <section id="inicio" class="inicio">  
+        <div class="container-inicio">
+            <div class="avtar"> </div>
+            <h1>JUAN MANUEL</h1>
+            <h2>Ingeniero en sistemas computacionales</h2>
+            <div class="redes">
+                <a href="https://m.facebook.com/profile.php?id=100089263863017" target="_blank"><i class="fa-brands fa-facebook" style="color: #3a6bdf;"></i></a>
+                <a href="https://wa.me/5540319553" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #1bb635;"></i></a>
+                <a href="https://www.linkedin.com/in/juan-manuel-villar-sanchez-7245bb275?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9kOmdl4fTUCLXtO8OUvtvQ%3D%3D" target="_blank"><i class="fa-brands fa-linkedin" style="color: #145ddb;"></i></a>
+                <a href="skype:[juanmanuelvillar08@gmail.com]?chat" target="_blank"><i class="fa-brands fa-skype" style="color: #34bcea;"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI  -->
+    <section class="sobremi" id="sobremi">
+        <div class="container-sobremi">
+            <h2>SOBRE MI</h2>
+            <p><span><b>Hola, soy Juan Manuel</b></span> egresado de la universidad politécnica de Texcoco como ingeniero en sistemas computacionales enfocado en el desarrollo y comprensión de sistemas de software y gestión de base de datos, que permitan resolver problemas 
+                específicos, así mismo la instalación y solución de sistemas operativos en equipos de 
+                cómputo.</p>
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                   <h3>DATOS PERSONALES</h3>
+                   <ul>
+                    <li>
+                        <strong>Fecha de Nacimiento:</strong>
+                        19 de enero del 2000
+                    </li>
+                    <li>
+                        <strong>Telefono:</strong>
+                        55-40-31-95-53
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                       juanmanuelvillar08@gmail.com
+                    </li>
+                    <li>
+                        <strong>Website:</strong>
+                        aviciimx.github.io/jmvsproyect.github.io/
+                    </li>
+                    <li>
+                        <strong>Direccion:</strong>
+                        Chicoloapan de Juarez, Estado de Mexico.
+                    </li>
+                   </ul>
+                    </div>
+                    <!-- intereses -->
+                    <div class="col">
+                     <h3>INTERESES</h3>
+                     <div class="contenedor-intereses">
+                        <div class="intereses" title="Me gustaria desarrollar aplicaciones web y videojuegos">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Desarrollo</span>
+                              </button>
+                        </div>
+                        <!-- MODAL INFORMATIVO1 -->
+                        
+                        <div class="intereses" title="Busco perfeccionar varios lenguajes de programacion">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal2">
+                                <i class="fa-brands fa-java"></i>
+                                <span >POO</span>
+                              </button>
+                            
+                        </div>
+                        <div class="intereses" title="Me gustaria viajar con mi trabajo">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal3">
+                                <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                              </button>
+                           
+                        </div>
+                        <div class="intereses" title="Quiero perfeccionar los sistemas operativos linux y windows">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal4">
+                               <di class="icon">
+                                <i class="fa-brands fa-linux"></i>  
+                                 <i class="fa-brands fa-windows"></i>
+                               </di>
+                            <span>Sistemas</span>
+                              </button>
+                                
+                        </div>
+                        <div class="intereses" title="Estoy aprendiendo ingles y quiero perfeccionarlo">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal5">
+                                <i class="fa-solid fa-language"></i>
+                                <span>English</span>
+                              </button>
+                        
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <a href="document/CVfinal.pdf" target="_blank">
+                    <button >
+                        Desacargar CV   <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+                
+        </div>
+    </section>
+    <!-- SECCION HABILIDADES -->
+    <section class="skill" id="skill">
+        <div class="container-skills">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Habilidades tecnicas -->
+                <div class="con">
+                    <h3><b>Habilidades Tecnicas</b></h3>
+                    <div class="skills">
+                        <span>JavaScript Mid-Level</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>HTML 5 Mid-Level</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>CSS Mid-Level</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>JAVA Mid-Level</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Data Base SQL Mid-Level</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>PHP Mid-Level</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Herramientas Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Mantenimiento</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>A</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Habilidades profecionales -->
+                <div class="con">
+                    <h3> Habilidades Profesionales</h3>
+                    <div class="skills">
+                        <span>Comuniacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Flexibilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Paciencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>English  Básico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                 <!-- Valores Personales -->
+                 <div class="con">
+                    <h3> Valores Personales</h3>
+                    <div class="skills">
+                        <span>Respeto</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Motivacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100$</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PROYECTOS -->
+    <section class="pro" id="pro">
+        <div class="container-pro">
+            <h2>CURRÍCULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>INGENIERÍA EN SISTEMAS</h4>
+                        <span class="casa">Universidad Politecnica de Texcoco.</span>
+                        <span class="fecha">( 2019-2023 )</span>
+                        <p>Licenciatura en sistemas computacionales ( Esperando Junio 2024 ).</p>
+                 
+                    </div>
+                    <div class="item izq">
+                        <h4>PROTESISIS Y ASISTENCIA DENTAL</h4>
+                        <span class="casa">Cetis 57 "Ignacio Allende".</span>
+                        <span class="fecha">( 2015-2018 )</span>
+                        <p>Tecnico en protesis y asistente dental ( Concluido ) y certificado de competencias Microsoft.</p>
+                          
+                    </div>
+                    <div class="item izq">
+                        <h4>CERTIFICADO SECUNDARIA</h4>
+                        <span class="casa">397 Lic. Jesus Reyes Heroles.</span>
+                        <span class="fecha">( 2012-2015)</span>
+                        <p>Certificado de secundaria y mecanografia en computacion ( concluido ).</p>
+                           
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia </h3>
+                    <div class="item der">
+                        <h4>APOYO EN PROYECTOS</h4>
+                        <span class="casa">Instituto Nacional De Gestoria Educativa (INGECA).</span>
+                        <span class="fecha">( Enero 2022 - Abril 2022 )</span>
+                        <p>Apoyo en el desarrollo y aplicación de instrumentos administrativos para su utilización en
+                            programas, proyectos e iniciativas en las áreas educativas, culturales y ambientales.</p>
+                            <div class="conectord">
+                                <div class="circulod">
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item der">
+                        <h4>MANTENIMIENTO Y DESARROLLO</h4>
+                        <span class="casa">UPTEX.</span>
+                        <span class="fecha">( Marzo 2022 - Septiembre 2022)</span>
+                        <p>Desempeño en mantenimiento preventivo y correctivo a equipos de cómputo, además de la
+                            instalación de sistemas operativos y apoyo a estudiantes nivel medio superior a su proyecto
+                            en desarrollo web.</p>
+                             <div class="conectord">
+                                <div class="circulod">
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item der">
+                        <h4>DESARROLLADOR WEB</h4>
+                        <span class="casa">Camara de comercio, servicio y turismo de Texcoco (CANACO-ILAM).</span>
+                        <span class="fecha">(Enero 2023 - Junio 2023 )</span>
+                        <p>Desarrollo de un sistema web para la gestión y manejo de la información específicamente
+                            para la empresa utilizando HTML, CSS, JavaScript,PHP,MySQL y Boostrap.</p>
+                            <div class="conectord">
+                                <div class="circulod">
+                                    
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECCION DE DEMOS -->
+    <section class="demo" id="demo">
+        <div class="container-demo">
+            <h2> Proyectos</h2>
+            <div class="galeria">
+                <div class="proyectos">
+                    <video  autoplay loop>
+                        <source src="img/piano.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay">
+                        <h3>PIANO HERO</h3>
+                        <p>Diseño y programación web con arduino 1</p>
+                        <!-- demo -->
+                       <div class="padre">
+                        <div class="pagina">
+                            <a href="hero/index.html" target="_blank">
+                                <button>Demo</button>
+                            </a>
+                        </div>
+                        <div class="documento">
+                            <a href="document/PIANO HERO - 9VSC2 (4).pdf" target="_blank">
+                                <button>Documentación</button>
+                            </a>
+                        </div>
+                       </div>
+                       
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <video autoplay loop>
+                        <source src="img/ilam2.mp4" type="video/mp4">
+                       
+                    </video>
+                    <div class="overlay">
+                        <h3>ILAM-ADMINISTRACIÓN DE DATOS</h3>
+                        <p>Diseño y programación</p>
+                           <!-- demo -->
+                       <div class="padre">
+                        <div class="pagina">
+                            <a href="ilam/index.html" target="_blank">
+                                <button>Demo</button>
+                            </a>
+                        </div>
+                        <div class="documento">
+                            <a href="document/AppWebILAM-JuanManuel.pdf" target="_blank">
+                                <button>Documentación</button>
+                            </a>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <!-- <img src="img/demo4.jpg" alt="proyect"> -->
+                    <video autoplay loop>
+                        <source src="img/inversivo8.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay">
+                        <h3>REALIDAD VIRTUAL</h3>
+                        <p>Diseño y estructura</p>
+                           <!-- demo -->
+                       <div class="padre">
+                        <div class="pagina">
+                            <a class="uno" target="_blank" href="realidadv.Jm/sixflags.html">
+                                <button>Demo</button>
+                            </a>
+                        </div>
+                       
+                       </div>
+                    </div>
+                </div>
+                <div class="proyectos">
+                
+                    <video autoplay loop>
+                        <source src="img/porta3.mp4" type="video/mp4">
+                       
+                    </video>
+                    <div class="overlay">
+                        <h3>PORTAFOLIO</h3>
+                        <p>Diseño y programación</p>
+                           <!-- demo -->
+                       <div class="padre">
+                        <div class="pagina">
+                            <a class="uno"  target="_blank" href="portafolio/index.html">
+                                <button>Demo</button>
+                            </a>
+                        </div>
+                    
+                        </div>
+                       </div>
+                    </div>
+                    <div class="proyectos">
+                           <img src="img/tienda.jpg" alt="">
+                       
+                        <div class="overlay2">
+                            <h3>TIENDA ONLINE</h3>
+                            <p>Diseño y programación</p>
+                               <!-- demo -->
+                           <div class="padre">
+                            <div class="documentos">
+                                <a href="document/JENA.pdf" target="_blank">
+                                    <button>Documentación</button>
+                                </a>
+                        
+                            </div>
+                           </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="container-contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- formulario -->
+                <form id="form" action="" class="formu">
+                    <div class="cot">
+                        <input name="nombre" type="text" placeholder="Nombre" required>
+                        <input name="telefono" type="text" placeholder="Número de contacto" required>
+                        <input  name="tema" type="text" placeholder="Tema" required>
+                        <textarea name="texto" id="" cols="30" rows="8" placeholder="Mensaje" style="resize: none;"></textarea>
+                        <button type="submit">Enviar Mensaje
+                          <i class="fa-regular fa-paper-plane" style="color:#fff"></i>
+                        </button>
+                      </div>
+                </form>
+             
+                <!-- Mapa -->
+                <div class="cot">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60211.80096738049!2d-98.94813647386259!3d19.402139098156496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e16c6e78e345%3A0xc3aa005f3f354215!2sChicoloapan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1695622559129!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot" style="color: #e72d18;"></i>
+                                Mexico 86, Chicoloapan de Juarez.
+                            </li>
+                           <li hidden>
+                            <a href="mailto:juanmanuelvillar08@gmail.com" id="gmail" ></a>
+                           </li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba"><i class="fa-solid fa-sort-up" style="color: #3c75d7;"></i></a><br>
+        <div class="redes">
+          
+            <a href="Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: #3a6bdf;"></i></a>
+            <a href="Facebook"><i class="fa-brands fa-whatsapp" style="color: #1bb635;"></i></a>
+            <a href="Facebook"><i class="fa-brands fa-linkedin" style="color: #145ddb;"></i></a>
+            <a href="Facebook" target="_blank"><i class="fa-brands fa-skype" style="color: #34bcea;"></i></a>
+        </div>
+        <div class="copy">
+            ©Copyright - 2023
+        </div>
+    </footer>
+<!-- MODALES -->
+<div class="MODALES">
+    <!-- moda1 -->
+    <div class="modal" tabindex="-1" role="dialog " id="miModal" style="border-radius: 50px;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2e2a2a;">
+              <h5 class="modal-title" style="color: #fff;">Desarrollador</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="background-color: #2e2a2a;">
+              <p  style="color: #fff;">Me gustaría desarrollar aplicaciones web y videojuegos dominar ambos a la perfección.</p>
+            </div>
+            <div class="modal-footer" style="background-color: #2e2a2a;">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- moda2 -->
+      <div class="modal" tabindex="-1" role="dialog " id="miModal2" style="border-radius: 50px;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2e2a2a;">
+              <h5 class="modal-title" style="color: #fff;">POO</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="background-color: #2e2a2a;">
+              <p  style="color: #fff;">Busco perfeccionar varios lenguajes de programación iniciando con java y Python.</p>
+            </div>
+            <div class="modal-footer" style="background-color: #2e2a2a;">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal3 -->
+      <div class="modal" tabindex="-1" role="dialog " id="miModal3" style="border-radius: 50px;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2e2a2a;">
+              <h5 class="modal-title" style="color: #fff;">Viajar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="background-color: #2e2a2a;">
+              <p  style="color: #fff;">Me gustaría viajar con mi trabajo y poder experimentar diferentes formas de ejercerlo.</p>
+            </div>
+            <div class="modal-footer" style="background-color: #2e2a2a;">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal4 -->
+      <div class="modal" tabindex="-1" role="dialog " id="miModal4" style="border-radius: 50px;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2e2a2a;">
+              <h5 class="modal-title" style="color: #fff;">Sistemas Operativos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="background-color: #2e2a2a;">
+              <p  style="color: #fff;">Me encanta trabajar con Linux es un mundo de muchas posibilidades sin embargo uno de mis objetivos es perfeccionar tanto Windows como
+                Linux.</p>
+            </div>
+            <div class="modal-footer" style="background-color: #2e2a2a;">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal5 -->
+      <div class="modal" tabindex="-1" role="dialog " id="miModal5" style="border-radius: 50px;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #2e2a2a;">
+              <h5 class="modal-title" style="color: #fff;">English</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="background-color: #2e2a2a;">
+              <p  style="color: #fff;">Actualmente me encuentro en el proceso, aprendiendo inglés y poder hablarlo de manera fluida.</p>
+            </div>
+            <div class="modal-footer" style="background-color: #2e2a2a;">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>ILAM-Administrador</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/fe3f9d5a63.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+        
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+
+</head>
+
+<body id="page-top">
+ 
+
+      
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify- ontent-center" href="inicio.html">
+                <div class="sidebar-brand-icon rotate-n-5">
+                    <!--<i class="fas fa-laugh-wink"></i>-->
+                    <img src="img/ilam2.png"style="width: 60px;"/>
+                </div>
+                <div class="sidebar-brand-text x-3">CSP-ILAM   <sup>Administrador</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="inicio.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Panel</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interfaz
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Datos</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="#">Usuarios</a>
+                        <a class="collapse-item" href="#">Supervisores</a>
+                        <a class="collapse-item" href="#">Guardias</a>
+                        <a class="collapse-item" href="#">Instalaciones</a>
+                        <a class="collapse-item" href="#">Observaciones</a>
+                    </div>
+                </div>
+            </li>
+                 <!--Cosas que no sirven-->
+            <!-- Nav Item - Utilities Collapse Menu -->
+            
+                 
+            <!--Limite cosa uno que no sirve-->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Acciones
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Registros</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="#">Registrar Usuario</a>
+                        <a class="collapse-item" href="#">Registrar Supervisor</a>
+                        <a class="collapse-item" href="#">Registrar Guardia</a>
+                        <a class="collapse-item" href="#">Registrar Instalaciones</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Otras Paginas:</h6>
+                        <a class="collapse-item" target="_blank" href="https://www.facebook.com/CANACOMexico/?locale=es_LA">Canaco</a>
+                        <a class="collapse-item" target="_blank" href="https://www.facebook.com/CSPILAM/?locale=es_LA">ILAM</a>
+                        
+                    </div>
+
+                </div>
+            </li>
+            
+           <!-- Basura-->
+            
+            <!---->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2"><strong>El Administrador</strong> Tiene Bastantes Privilegios y Grandes Responsabilidades</p>
+                <a target="_blank" class="btn btn-success btn-sm" href="https://support.microsoft.com/es-es/windows/-c%C3%B3mo-puedo-iniciar-sesi%C3%B3n-como-administrador-63267a09-9926-991a-1c77-d203160c8563#:~:text=Un%20administrador%20es%20una%20persona,en%20otras%20cuentas%20de%20usuario.">Mas información!</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar  -->
+                   
+                    <div class="nombre">
+                        <p>CORPORACIÓN DE SEGURIDAD - ILAM</p>
+                    </div>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                       <!-- <div class="topbar-divider d-none d-sm-block"></div>-->
+                       
+                      
+                      <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Lucas Duarte</span>
+                               <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                       
+                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item">
+                                <i class="fas  fa-splotch fa-sm fa-fw mr-2 text-gray-400"></i>
+                               Activo </a>
+                               
+                                <a class="dropdown-item" href="#"> 
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Configuración
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-pen-to-square fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Cambiar contraseña
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../index.html" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Cerrar Sesión
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+             
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+
+                    <!-- Page Heading -->
+                 
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h5 mb-0 text-gray-800">NUMERO DE DATOS REGISTRADOS</h1>
+                    </div>
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-60 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class=" text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                <h6>instalaciones</h6></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-900">8</div>
+                                        </div>
+                                        <div>
+                                        <div class="col-auto">
+                                        <i class="fas fa-house-circle-check fa-2x text-gray-300 "></i>
+                                      
+        </div>
+        </div>
+                                    </div>
+                                    
+                                </div>
+                               
+                            </div>
+                            <div class="text-center"style="background: #3498DB;"><a style="color: white;" href="tables/tablesins.html">Mas información</a></div>
+
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example  col-center btn btn-primary border-10 text-center -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-60 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                               <h6> Supervisores</h6></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-900">5</div>
+                                        </div>
+                                        <div class="col-auto">
+                                        <i class="fas  fa-user-secret fa-2x text-gray-300 "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center"style="background: #54B40C;"><a style="color: white;" href="#">Mas información</a></div>
+                        </div>
+
+                         
+                    <!--obs-->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-60 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class=" font-weight-blond text-info text-uppercase mb-1">
+                                                <h6>guardias<h6></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-900">7</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-user-nurse fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center border-10" style="background: #1FB298"><a id="toc" style="color: white;" href="#">Mas información</a></div>
+                        </div>
+                        <!--observaciones-->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-60 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class=" font-weight-bold text-warning text-uppercase mb-1">
+                                                <h6>Observaciones </h6></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-900">33</div>
+                                        </div>
+                                        <div class="col-auto">
+                                        <i class="fas  fa-pen-to-square fa-2x text-gray-300"></i>
+                                        </div>
+                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center" style="background: #DEAD20 "><a style="color: white;"href="#">Mas información </a></div>
+                        </div>
+                        
+        
+                    </div>
+                    
+
+                       
+
+                    <!-- Content Row -->
+
+                
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Reportes Recientes</h6>
+                                </div>
+                                <div class="card-body">
+                               
+               
+                
+                    <table class="table" id="myTable">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Supervisor</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Guardia</th>
+      <th scope="col">Instalación </th>
+      <th scope="col">Descripción </th>
+  
+   
+      
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    
+    
+       <tr>
+        <td>1</td>
+        <td>Carmen</td>
+        <td>23/01/2022</td>
+        <td>Gato</td>
+        <td>ILAM</td>
+        <td>Todo en orden</td>
+       
+        
+    </tr>
+                             
+            </div>
+    </table>
+    </div>
+    <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; CSP-ILAM 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!--<End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+
+    <!-- End of Page Wrapper -->
+
+    <!-- Desplace al boton superior-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal recuadro emergente-->
+    
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Listo para salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">Selecciona "Cerrar sesión" Si estas listo para abandonar la sesión actual</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="../index.html">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+<!--Datable-->
+<script src="/js/lib/datatables-net/datables.min.js"></script>
+<script>
+        $(function() {
+            $('#myTable').DataTable({
+                select: {
+                    //style: 'multi'
+                },
+                responsive: true,
+                "language": {
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla =(",
+                    "sInfo": "Registros del _START_ al _END_ de _TOTAL_ registros",
+                    "sInfoEmpty": "Registros del 0 al 0 de 0 registros",
+                    "sInfoFiltered": "-",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    },
+                    "buttons": {
+                        "copy": "Copiar",
+                        "colvis": "Visibilidad"
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PC
+C/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+</body>
+
+</html>

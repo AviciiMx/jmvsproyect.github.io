@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Mi Recamara</title>
+    <meta name="description” content=" Interactions - A-Frame>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="groundTexture" src="https://static.vecteezy.com/system/resources/thumbnails/002/222/126/small/dark-wooden-plank-textured-background-illustration-vector.jpg">
+            <img id="poster"
+                src="https://th.bing.com/th/id/OIP.PtapaLCo4-PRwMBkLxZkogHaHa?pid=ImgDet&w=958&h=958&rs=1">
+            <img id="cuadro"
+                src="img/six.png">
+            <img id="pared1" src="https://static.dw.com/image/16949579_101.jpg">
+            <img id="pared2"
+                src="https://st4.depositphotos.com/2051931/39134/i/450/depositphotos_391349184-stock-photo-panorama-black-wood-texture-background.jpg">
+
+            <img id="puerta" src="data:image/jpeg;base64,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">
+            <audio id="sonido2" src="img/avicii.mp4"></audio>
+
+            <img id="Imagen" src="img/panorama1.jpg">
+            <audio id="musica" src="img/avicii.mp4"></audio>
+        </a-assets>
+
+        <a-text></a-text>
+        <a-sphere
+            src="https://media.istockphoto.com/photos/texture-detail-of-a-balloon-of-basketball-picture-id1059744586?b=1&k=20&m=1059744586&s=170667a&w=0&h=dOnylC5ivTTf4CXr5PuJrWSZozkfD3mAy3DvftgVpwE="
+            position="1 0.3 -3" radius=0.35 rotation="0 90 30" scale="0.9 0.9 0.9" color="#FAFAFA"
+            event-set__enter="_event: mouseenter; _target: #bg; color: #FAFAFA">
+        </a-sphere>
+        <a-entity laser-controls="hand: left"></a-entity>
+        <a-entity laser-controls="hand: right"></a-entity>
+
+        <a-entity obj-model="cama-obj: #obj; mtl: #cama-mtl" scale="0.1 0.1 0.1" position="0 -0.02 0"></a-entity>
+
+        <a-entity geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.1" position="0.403 6.201 0.449"></a-entity>
+
+        <a-sky src="#skyTexture" rotation="0 0 0 " repeat:5 5;></a-sky>
+
+        <a-light type="ambient" color="#445451"></a-light>
+        <a-light type="point" intensity="1" position="2 4 4"></a-light>
+        <a-plane src="#groundTexture" rotation="-90 0 0 " position="0 -0.02 0" repeat:50 10; normal-texture-repear: 50
+            10; scale="11 11 1" normal-map:#groundTexture-NRM> </a-plane>
+
+        <a-plane color="#E1DCDC" rotation="87.663 -90.298 89.725" position="0 6 0" scale="11 11 1"> </a-plane>
+
+        <a-plane src="#cuadro" height="6" width="8" position="-2 4 -4.9" scale="0.4 0.4 0.4"> </a-plane>
+
+        <a-plane src="#poster" height="6" width="7" position="5.101 3 -0.15" rotation="0 -90 0" scale="0.3 0.3 0.3">
+        </a-plane>
+
+        <a-box src="#puerta" height="10" width="5" depth="0.2" position="5.099 2.021 -3.241" rotation="0 -90 -180"
+            scale="0.5 0.5 0.5" sound="src: #sonido2; on: click; volume:10">
+            <a-animation attribute="rotation" begin="click" dur="500" position="5.099 2.021 -3.241" to="0 -180 -179.393" direction="alternate">
+            </a-animation>
+
+            <a-animation attribute="position" begin="click" dur="500"  to="3.922 2.021 -3.617" direction="alternate">
+            </a-animation>
+        </a-box>
+
+
+        <a-plane color="black" height="10" width="3" position="5.203 1.993 -2.828" rotation="0 -90 0"
+            scale="0.5 0.5 0.5"> </a-plane>
+
+
+
+        <a-plane src="#pared1" height="22" width="38" position="5.254 3 -0.2" rotation="0 -90 0" scale="0.3 0.3 0.3">
+        </a-plane>
+
+        <a-plane src="#pared1" height="22" width="38" position="-5.5 3 -0.2" rotation="0 90 0" scale="0.3 0.3 0.3">
+        </a-plane>
+
+        <a-plane src="#pared2" height="20" width="28" position="0 2.5 -5"  scale="0.38 0.38 0.38"></a-plane>
+
+        <a-box color="#0072A0" depth="2" position="-3.701 0.694 -3.237" rotation="0 -89.954 90" height="4" width="0.5 ">
+        </a-box>
+        <a-box src="/../../Bed Fly/geltkan3.jpg" depth="2" position="-3.691 0.195 -3.221" rotation="0 -89.490 90"
+            height="4" width="0.5 "></a-box>
+        <a-box color="lightblue" position="-4.258 1.107 -4.702" rotation="0 -88.923 0" height=".3" width=".5"></a-box>
+        <a-box color="lightblue" position="-3.223 1.097 -4.701" rotation="0 -88.903 0" height=".3" width=".5"></a-box>
+
+        <a-sky id="Imagen" radius="25" src="#Imagen">
+            <a-entity sound="src: #musica; autoplay:  true; volume:50;" position="1.396 1.525 0"></a-entity>
+        </a-sky>
+
+
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+
+</html>

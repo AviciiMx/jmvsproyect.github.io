@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #303F9F;
+  background: #2B4FF3;
+}
+/*7ACBCD 303F9F*/
+
+.login-container {
+  width: 430px;
+  height: 630px; /*tamaño de login altura*/ 
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #FFFFFF; /*fondo de el cuadro de login*/
+  box-shadow: 10px 10px 10px #455A64 , -25px -25px 60px #455A64;/*fondos desvanecidos*/
+  transition: 2.5s;
+}
+
+.avtar {
+  background: url("../img/ilam.png") no-repeat;
+  width: 140px;
+  height: 140px;
+  background-size: 100%; /*Posicision de la imagen*/
+  border-radius: 5%;
+  margin: 0 auto;
+  transition: 2.5s;
+  box-shadow: 5px 5px 15px #42A5F5, /*fondo desvanecido alrededor de la imagen*/
+      -5px -5px 15px #42A5F5;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+
+.fields {
+  width: 100%;
+  padding: 40px 5px 5px 5px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #111111;
+  padding: 15px 10px 20px 2px; } /*posicion de los botones*/
+
+.username,
+.password {
+  margin-bottom: 20px;
+  border-radius: 40px;
+  box-shadow: inset 3px 3px 3Px #42A5F5 /*contraste desvanecido del boton de arriba*/,
+   inset -3px -3PX 3px #42A5F5
+  /*contraste de abajo*/;
+}
+
+.login {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 20px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF; /*letra boton de login*/
+  background: #1565C0; /*color del boton*/
+ 
+  box-shadow: 3px 3px 8px #FFFFFF, -3px -3px 8px #263238; /*contraste desvanecido del boton de abajo*/
+  transition: 4.5s;
+}
+
+.login:hover {
+  background: #42A5F5; /*color de fondo de boton*/
+  opacity: .5;
+}
+
+.link {
+  
+  text-align: center;
+  color:#2B4FF3;
+  background-color: #B3C4C4; 
+  margin-bottom: 20px;
+  border-radius: 40px;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top:565px;
+  left:40px;
+
+}
+.link:hover{
+  background: #818A8A; 
+}
+
+a {
+  text-decoration: none;
+  background-color: #989ea3;
+  border: solid 1px  #3b3e3e ;
+  border-radius: 10px;
+  color: #474d4d;
+  font-size: 16px;
+  width: 100px;
+  padding: 5px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 590px;
+  left: 47px;
+}
+a:hover{
+  background-color: #23272b;
+  color: #D5E1E1;
+}
+.fas {
+  color: #111111; /*color de iconos*/
+  padding: 20px;
+}
+
+input::placeholder {
+  color: #bcc3c4; /*color de letras*/
+}
+
+input:focus {
+  cursor: #76a110;
+}
+.alert {
+ text-align: center;
+
+}

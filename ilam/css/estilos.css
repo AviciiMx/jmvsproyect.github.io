@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #303F9F;
+  background: #2B4FF3;
+}
+/*7ACBCD 303F9F*/
+
+.login-container {
+  width: 430px;
+  height: 610px; /*tamaño de login altura*/ 
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #FFFFFF; /*fondo de el cuadro de login*/
+  box-shadow: 10px 10px 10px #455A64 , -25px -25px 60px #455A64;/*fondos desvanecidos*/
+  transition: 2.5s;
+}
+
+.avtar {
+  background: url("../img/ilam.png") no-repeat;
+  width: 140px;
+  height: 140px;
+  background-size: 100%; /*Posicision de la imagen*/
+  border-radius: 5%;
+  margin: 0 auto;
+
+  /*box-shadow: 5px 5px 15px #42A5F5, /*fondo desvanecido alrededor de la imagen
+      -5px -5px 15px #42A5F5;*/
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+
+.fields {
+  width: 100%;
+  padding: 40px 5px 5px 5px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #111111;
+  padding: 15px 10px 20px 2px; } /*posicion de los botones*/
+
+.username,
+.password {
+  margin-bottom: 20px;
+  border-radius: 40px;
+  box-shadow: inset 3px 3px 3Px #42A5F5 /*contraste desvanecido del boton de arriba*/,
+   inset -3px -3PX 3px #42A5F5
+  /*contraste de abajo*/;
+}
+
+.login {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 20px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF; /*letra boton de login*/
+  background: #1565C0; /*color del boton*/
+  padding: 15px;
+  text-align: center;
+  box-shadow: 3px 3px 8px #FFFFFF, -3px -3px 8px #263238; /*contraste desvanecido del boton de abajo*/
+  transition: .5s;
+}
+
+.login:hover {
+  background: #42A5F5; /*color de fondo de boton*/
+  opacity: 5.5;
+}
+
+.link {
+  padding-top: 15px; /*posicion de texto mas abajo u arriba*/
+  text-align: center;
+  color:#2B4FF3;
+
+}
+
+a {
+  text-decoration: none;
+  color: #2b1491;
+ 
+}
+a:hover{
+  color: #074b4b;
+}
+
+.fas {
+  color: #111111; /*color de iconos*/
+  padding: 20px;
+}
+
+input::placeholder {
+  color: #bcc3c4; /*color de letras*/
+}
+textarea::placeholder{
+  color: #134c55; /*color de letras*/
+
+}
+
+input:focus {
+  cursor: #76a110;
+}
+.alert {
+ text-align: center;
+
+}

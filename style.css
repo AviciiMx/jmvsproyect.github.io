@@ -1,0 +1,1105 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Nanum+Gothic&family=Open+Sans:wght@300&family=Roboto+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Nanum+Gothic&family=Open+Sans:wght@300&family=Roboto+Mono:ital,wght@1,700&family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Nanum+Gothic&family=Open+Sans:wght@300&family=Roboto+Mono:ital,wght@1,700&family=Roboto+Slab:wght@200&family=Skranji&display=swap');
+*{
+    box-sizing: border-box; /*la propiedad border box ayuda a que el 
+    elemento se ajuste dependiendo del tamaño general haciendolo adaptativo*/
+    font-family:Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* ayuda a hacer que la transaccion al hacer scroll sea de manera suave y no isntantanea  */
+    scroll-behavior: smooth;
+}
+/* HEADER */
+.container-header{
+    background-color: #181C1B;
+     position: fixed; /*ayuda a mantener fijo un elemento*/
+     width: 100%;
+     top: 0;
+     left: 0 ;
+     z-index: 99;
+}
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+.logo a{
+    font-family:"Anton";
+    font-size: 20px;
+    color:#1ABC9C;
+    text-decoration: none;
+
+}
+.container-header header ul{
+    display:flex;
+    list-style: none;
+
+}
+.container-header header nav ul li a{
+  font-family:"'Times New Roman', Times, serif";
+  text-align: none;
+  color: #F0F3F4;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+.container-header header  nav ul li a:hover{
+    color:rgb(55, 120, 120);
+    border: 1px solid  #1ABC9C;
+}
+.nav-responsive{
+    background-color: rgb(55, 120, 120);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer; /*transforma el cursor en un icono de mano*/
+    display: none;
+}
+
+/* INICIO */
+.avtar{
+    background: url("img/yo2.jpg") no-repeat;
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    border: 10px solid #1ABC9C;
+    background-size: 125% 120% ; /*Posicision de la imagen*/
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.inicio{
+    background: linear-gradient(to top,rgba(30,35,38,.9), rgba(30,35,38,1)),
+    url("img/fondo1.jpg");
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+   
+}
+.inicio .container-inicio{
+padding: 20px;
+background-color: #141817;
+max-width: 320px;
+margin: auto;
+text-align: center;
+border-radius: 30px;
+box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 1);
+}
+.inicio .container-inicio:hover{
+    cursor: pointer;
+    border: 1px solid #1ABC9C;
+    transform: scale(1.1);
+
+}
+.inicio .container-inicio h1{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inicio .container-inicio h2{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .container-inicio .redes a{
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width:42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 10px 5px 5px 5px;
+}
+.inicio .container-inicio .redes a:hover{
+background-color: #3C3D3D;
+}
+/* SOBRE MI */
+
+.sobremi{
+    background-color: #161414;
+    color:#fff;
+    padding: 50px 20px;
+
+}
+.container-sobremi{
+    max-width: 1100px;
+    margin: auto;
+}
+.container-sobremi h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+}
+.container-sobremi p{
+    text-align: justify;
+    line-height: 22px ; /*el espacio entre la linea de texto*/
+    margin-bottom: 25px;
+}
+.container-sobremi p span{
+    color:#1ABC9C;
+   
+    
+}
+.sobremi .fila{
+   display: flex;
+    
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.col ul{
+    list-style: none;
+}
+.col ul li{
+    margin: 12px 0;
+}
+.col ul li strong{
+    display:inline-block;
+    color:#1ABC9C;
+    width: 200px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-intereses .intereses button{
+   
+    border: none;
+    width: 100px;
+    height: 100px;
+    background-color: #393131;
+    border-radius: 10px;
+    margin: 0 15px  15px 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;   
+}
+.intereses button:hover{
+    background-color: #0E6251;
+
+}
+.intereses .icon{
+    font-size: 1px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+}
+.intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container-sobremi a{
+    text-decoration: none;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button:hover{
+    /* background-color: #393131; */
+    background-color:#0E6251;
+}
+/* HABILIDADES */
+.skill{
+    background-color: #2e2b2b;
+    color:#fff;
+    padding: 50px 20px;
+
+}
+.skill .container-skills{
+    max-width: 1100px;
+    margin: auto;
+}
+.container-skills .fila{
+    display: flex;
+}
+.skill h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.skill .fila .con{
+width: 50%;
+padding: 0 20px;
+}
+.skill .fila .con h3{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+.skill .skills > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skill .skills .barra-skill{
+height: 5px;
+width: 90%;
+background-color: #121313;
+position: relative;
+margin-bottom: 30px;
+
+}
+.skill .skills .progreso{
+    background-color: #148F77;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+}
+.skill .skills .barra-skill span {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #148F77;
+    border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+    top:-10px;
+    right: -15px;
+    font-size: 11px;
+} 
+/*Esta clase se agregaran dinamicamente mediante javascript*/
+.skill .skills .js{
+    width: 0%;
+    animation: 2s js forwards;/* Se aplica una animación llamada "js" durante 2 segundos 
+    y mantiene el estado final. */
+}
+@keyframes js {
+    0% {
+        width: 0%; /* Al inicio de la animación, el ancho es 0%. */
+    }
+    100% {
+        width: 50%; /* Al final de la animación, el ancho es 50%. */
+    }
+}
+.skill .skills .HTML{
+  width: 0%;
+  animation: 2s html forwards;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.skill .skills .css{
+    width: 0%;
+    animation: 2s css forwards;
+  }
+  @keyframes css {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 50%;
+      }
+  }
+  .skill .skills .java{
+    width: 0%;
+    animation: 2s java forwards;
+  }
+  @keyframes java {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 50%;
+      }
+  }
+  .skill .skills .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+  }
+  @keyframes sql {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 50%;
+      }
+  }
+  .skill .skills .php{
+    width: 0%;
+    animation: 2s php forwards;
+  }
+  @keyframes php {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 50%;
+      }
+  }
+  .skill .skills .office{
+    width: 0%;
+    animation: 2s office forwards;
+  }
+  @keyframes office {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 50%;
+      }
+  }
+  .skill .skills .mant{
+    width: 0%;
+    animation: 2s mant forwards;
+  }
+  @keyframes mant{
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 70%;
+      }
+  }
+  .skill .skills .english{
+    width: 0%;
+    animation: 2s ingles forwards;
+  }
+  @keyframes ingles {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 35%;
+      }
+  }
+  .skill .skills .comu{
+    width: 0%;
+    animation: 2s comu forwards;
+  }
+  @keyframes comu {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  }
+  .skill .skills .tee{
+    width: 0%;
+    animation: 2s tee forwards;
+  }
+  @keyframes tee {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 80%;
+      }
+  }
+  .skill .skills .flexi{
+    width: 0%;
+    animation: 2s flexi forwards;
+  }
+  @keyframes flexi {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 80%;
+      }
+  }
+  .skill .skills .paci{
+    width: 0%;
+    animation: 2s paci forwards;
+  }
+  @keyframes paci {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  }
+  .skill .skills .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+  }
+  @keyframes dedicacion {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  }
+  .skill .skills .respeto{
+    width: 0%;
+    animation: 2s respeto forwards;
+  }
+  @keyframes respeto {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  }
+  .skill .skills .responsabilidad{
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+  }
+  @keyframes responsabilidad {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  }
+  .skill .skills .motivacion{
+    width: 0%;
+    animation: 2s motivacion forwards;
+  }
+  @keyframes motivacion {
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  }
+  /* CURRICULUM */
+
+.pro{
+    background-color: #0d0d0d;
+    color:#fff;
+    padding: 50px 20px;
+
+}
+.pro .container-pro{
+    max-width: 1100px;
+    margin: auto;
+}
+.pro h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.pro .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.pro .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.pro .fila col h3 {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 25px;
+}
+.pro .fila .izquierda{
+    border-right: 2x solid #0d0d0d;
+}
+.pro .fila .derecha{
+    border-right: 2x solid #0d0d0d;
+}
+.pro .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #161414;
+    position: relative;
+}
+.pro .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.pro .fila .item .casa{
+    color: #58CCE1;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+.pro .fila .item .fecha{
+    color: #58CCE1;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+.pro .fila .item p{
+    text-align: justify;
+line-height: 20px;
+}
+.pro .fila .izq{
+    border-right: 2px solid #58CCE1;
+    margin-right: 20px;
+}
+.pro .fila .der{
+    border-left: 2px solid #58CCE1;
+    margin-left: 20px;
+}
+.pro .fila .item .conector{
+    height: 2px;
+    background-color: #58CCE1;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.pro .fila .item .conector .circulo{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.pro .fila .item .conectord{
+    height: 2px;
+    background-color: #58CCE1;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.pro .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* PORTAFOLIO */
+.demo{
+    background-color: #2e2b2b;
+    color:#fff;
+    padding: 50px 20px;
+
+}
+.demo .container-demo{
+    max-width: 1100px;
+    margin: auto;
+}
+.demo h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.demo  .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.demo .galeria  .proyectos {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.demo .galeria .proyectos video{
+    border-radius: 10px;
+    width: 100%;
+    border: #125e46 2px solid;
+    display: block;
+}
+.demo .galeria .proyectos img{
+    border-radius: 10px;
+    width: 150%;
+    height: 213px;
+    border: #125e46 2px solid;
+    display: block;
+}
+.demo .galeria .proyectos .overlay .padre{
+    display: flex;
+
+}
+.demo .galeria .proyectos .overlay .pagina{
+    width: 50%;
+    height: 100%;
+}
+.demo .galeria .proyectos .overlay .pagina a {
+    position: absolute;
+    top: 80%;
+    right: 70%;
+    text-decoration: none;
+}
+.demo .galeria .proyectos .overlay .pagina a button {
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    /* margin: 20px auto; */
+    padding: 6px 11px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+.demo .galeria .proyectos .overlay .pagina .uno{
+    position: absolute;
+    top: 80%;
+    right: 41%;
+    text-decoration: none;
+    
+}
+.demo .galeria .proyectos .overlay .pagina a button:hover {
+    background-color: rgb(55, 151, 85);
+    border: 2px solid  rgb(42, 116, 65);
+}
+.demo .galeria .proyectos .overlay .documento{
+    width: 50%;
+}
+.demo .galeria .proyectos .overlay .documento a {
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    text-decoration: none;
+}
+.demo .galeria .proyectos .overlay .documento a button {
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    /* margin: 20px auto; */
+    padding: 6px 11px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+   
+}
+.demo .galeria .proyectos .overlay .documento a button:hover {
+    background-color: rgb(55, 151, 85);
+    border: 2px solid  rgb(42, 116, 65);
+}
+.demo .galeria .proyectos .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background:linear-gradient(rgba(17, 103, 56, 0.8), rgba(17, 125, 103, 0.8));;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.demo .galeria .proyectos .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.demo .galeria .proyectos .overlay:hover{
+    opacity: 1;
+}
+.demo .galeria .proyectos .overlay:hover h3{
+ margin-bottom: 0px;
+}
+.demo .galeria .proyectos .overla2y:hover{
+    opacity: 1;
+}
+.demo .galeria .proyectos .overlay2:hover h3{
+ margin-bottom: 0px;
+}
+.demo .galeria .proyectos .overlay .documento a button {
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    /* margin: 20px auto; */
+    padding: 6px 11px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+   
+}
+.demo .galeria .proyectos .overlay2 .documentos a{
+    text-decoration: none;
+    position: absolute;
+    top: 80%;
+    left: 31%;
+    text-decoration: none;
+}
+.demo .galeria .proyectos .overlay2 .documentos a button {
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    /* margin: 20px auto; */
+    padding: 6px 11px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+   
+}
+.demo .galeria .proyectos .overlay2 .documentos a button:hover {
+    background-color: rgb(55, 151, 85);
+    border: 2px solid  rgb(42, 116, 65);
+}
+.demo .galeria .proyectos .overlay2{
+    position: absolute;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    text-align: center;
+    background:linear-gradient(rgba(17, 103, 56, 0.8), rgba(17, 125, 103, 0.8));;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.demo .galeria .proyectos .overlay2 h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.demo .galeria .proyectos .overlay2:hover{
+    opacity: 1;
+}
+.demo .galeria .proyectos .overlay2:hover h3{
+ margin-bottom: 0px;
+}
+/* CONTACTO */
+.contacto{
+    background-image: url(img/mapa2.jpg);
+    background-color: #3b3939;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .container-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .fila form{
+    width: 100%;
+    position: relative;
+}
+.contacto .cot{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.container-contacto .fila .cot iframe{
+    width: 100%;
+    height: 84%;
+
+}
+.contacto .cot input, .contacto .cot textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color:#2e2b2b;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button:hover{
+    background-color:  rgb(42, 116, 65); ;
+}
+.contacto .cot .info{
+    position: absolute;
+    background-color: #0d0d0d;
+    padding: 20px;
+    top: 94%;
+    width: 330px;
+    max-width: 360px;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+}
+.contacto .cot.info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+
+}
+.contacto .col .info ul li i{
+    color: #58CCE1;
+    display: inline-block;
+    margin-right: 20px;
+}
+/* footer */
+footer{
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 12px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .redes a:hover{
+    background-color: #3C3D3D;
+    }
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #435e62;
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 30px;  
+}
+footer .arriba:hover{
+    background-color:#2e2b2b;
+}
+/* RESPONSIVE */
+@media screen and (max-width:1100px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid #fff;
+        right: 0;
+        top: 60px;
+        background-color: #121314;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skill .fila{
+        display: block;
+    }
+    .skill .fila .con{
+        width: 100%;
+    }
+    .skill .fila .con .barra-skill{
+        width: 100%;
+    }
+    .pro .fila{
+        display: block;
+    }
+    .pro .fila .col{
+        width: 90%;
+    }
+    .pro .fila .derecha{
+        margin-left: 15px;
+    }
+    .demo .galeria{
+        display: block;
+        width: 100%;
+    }
+    .demo .galeria .proyectos{
+        max-width: 100%;
+    }
+    .demo .galeria .proyectos video{
+        width: 100%;
+    }
+    .demo .galeria .proyectos .overlay2 .documentos a{
+       
+        left: 38%;
+        
+    }
+    .demo .galeria .proyectos .overlay .pagina a {
+        
+        right: 80%;
+      
+    }
+    .demo .galeria .proyectos .overlay .pagina .uno{
+       
+        right: 45%;
+      
+        
+    }
+    .demo .galeria .proyectos .overlay .documento a {
+      
+        left: 70%;
+     
+    }
+    .demo .galeria .proyectos img{
+        width: 100%;
+        height: 350px;
+    }
+    .demo .galeria .proyectos .overlay2{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .cot{
+        width: 100%;
+    }
+    .container-contacto .fila .cot iframe{
+        width: 100%;
+        height: 500px;
+    }
+    .contacto .cot .info{
+       
+        top: 88%;
+    }
+}
+@media screen and (max-width:524px) {
+    .demo .galeria .proyectos img{
+        width: 100%;
+        height: 280px;
+    }
+    .demo .galeria .proyectos .overlay2 .documentos a{
+       
+        
+        left: 35%;
+       
+    }
+    .demo .galeria .proyectos .overlay .documento a {
+        
+        left: 65%;
+        
+    }
+    .demo .galeria .proyectos .overlay .pagina .uno{
+        
+        right: 42%;
+       
+        
+    }
+ 
+}
+@media screen and (max-width:470px) {
+    .demo .galeria .proyectos img{
+        width: 100%;
+        height: 250px;
+    }
+    .demo .galeria .proyectos .overlay .pagina .uno{
+        
+        right: 41%;
+      
+        
+    }
+    .demo .galeria .proyectos .overlay2 .documentos a{
+        
+        left: 30%;
+       
+    }
+    .demo .galeria .proyectos .overlay .documento a {
+      
+        left: 50%;
+     
+    }
+    .demo .galeria .proyectos .overlay .pagina a {
+        
+        right: 70%;
+      
+    }
+}
