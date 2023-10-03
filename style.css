@@ -171,6 +171,11 @@ background-color: #3C3D3D;
 .col ul li{
     margin: 12px 0;
 }
+.col ul li .mx{
+    display:inline-block;
+    color:#1ABC9C;
+    width: 200px;
+}
 .col ul li strong{
     display:inline-block;
     color:#1ABC9C;
@@ -965,6 +970,8 @@ footer .arriba:hover{
         background-color: #121314;
         width: 180px;
     }
+    
+
     nav.responsive ul{
         display: block !important;
     }
@@ -976,6 +983,14 @@ footer .arriba:hover{
 @media screen and (max-width:700px) {
     .sobremi .fila{
         display: block;
+    }
+    .col ul li .mx{
+      
+        width: 100%;
+    }
+    .col ul li strong{
+      
+        width: 100%;
     }
     .sobremi .fila .col{
         width: fit-content;
