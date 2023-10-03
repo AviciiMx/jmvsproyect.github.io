@@ -1082,13 +1082,13 @@ footer .arriba:hover{
         height: 250px;
     }
     .demo .galeria .proyectos .overlay .pagina .uno{
-        
+        top:70%;
         right: 41%;
       
         
     }
     .demo .galeria .proyectos .overlay2 .documentos a{
-        
+        top:70;
         left: 30%;
        
     }
