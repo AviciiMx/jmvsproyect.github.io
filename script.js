@@ -60,7 +60,7 @@ const envio = (event) => {
     console.log(form.get('nombre'));
     const name = "Nombre: ";
     const telefono = "Telefono: ";
-    const mailtoLink = `mailto:juanmanuelvillar08@mail.com?subject=${form.get('tema')}&body=${name}${form.get('nombre')}%0D%0A${telefono}${form.get('telefono')}%0D%0A${form.get('texto')}`;
+    const mailtoLink = `mailto:juanmanuelvillar08@gmail.com?subject=${form.get('tema')}&body=${name}${form.get('nombre')}%0D%0A${telefono}${form.get('telefono')}%0D%0A${form.get('texto')}`;
     window.location.href = mailtoLink;
     return false;
 }
