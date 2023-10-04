@@ -1141,8 +1141,14 @@ footer .arriba:hover{
     }
     .demo .galeria .proyectos .overlay2 .documentos a{
         top: 70%;
-        left: 30%;
+        left: 35%;
        
+    }
+     .demo .galeria .proyectos .overlay .pagina .tres{
+        position: absolute;
+        top: 75%;
+        right: 35%;
+        display: block;
     }
     .demo .galeria .proyectos .overlay .documento a {
       top: 70%;
