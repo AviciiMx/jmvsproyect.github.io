@@ -685,6 +685,21 @@ line-height: 20px;
     border-radius: 10px;
     
 }
+.demo .galeria .proyectos .overlay .pagina  button {
+    cursor:pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;/* intenta ajustar el ancho al contenido de una manera más inteligente, eliminando 
+    el espacio adicional innecesario*/
+    display: block; /* ocupan todo el ancho disponible de su contenedor principal, lo que significa que generalmente se 
+    extienden desde el borde izquierdo al borde derecho de su contenedor */
+    /* margin: 20px auto; */
+    padding: 6px 11px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px;
+    
+}
 .demo .galeria .proyectos .overlay .pagina .uno{
     position: absolute;
     top: 80%;
@@ -692,6 +707,20 @@ line-height: 20px;
     text-decoration: none;
     
 }
+.demo .galeria .proyectos .overlay .pagina .dos{
+    position: absolute;
+    top: 80%;
+    right: 41%;
+    text-decoration: none;
+    
+} .demo .galeria .proyectos .overlay .pagina .tres{
+    position: absolute;
+    top: 80%;
+    right: 41%;
+    text-decoration: none;
+    display: none;
+}
+
 .demo .galeria .proyectos .overlay .pagina a button:hover {
     background-color: rgb(55, 151, 85);
     border: 2px solid  rgb(42, 116, 65);
@@ -960,14 +989,6 @@ footer .arriba:hover{
     .nav-responsive{
         display: block;
     }
-       .col ul li .mx{
-      
-        width: 100%;
-    }
-    .col ul li strong{
-      
-        width: 100%;
-    }
     nav.responsive{
         display: block;
         position: absolute;
@@ -991,6 +1012,14 @@ footer .arriba:hover{
 @media screen and (max-width:700px) {
     .sobremi .fila{
         display: block;
+    }
+    .col ul li .mx{
+      
+        width: 100%;
+    }
+    .col ul li strong{
+      
+        width: 100%;
     }
     .sobremi .fila .col{
         width: fit-content;
@@ -1037,7 +1066,6 @@ footer .arriba:hover{
        
         right: 45%;
       
-        
     }
     .demo .galeria .proyectos .overlay .documento a {
       
@@ -1050,6 +1078,15 @@ footer .arriba:hover{
     }
     .demo .galeria .proyectos .overlay2{
         width: 100%;
+    }
+    .demo .galeria .proyectos .overlay .pagina .dos{
+        display: none;
+    }
+    .demo .galeria .proyectos .overlay .pagina .tres{
+        position: absolute;
+        top: 70%;
+        right: 35%;
+        display: block;
     }
 
     .contacto .fila{
@@ -1097,23 +1134,23 @@ footer .arriba:hover{
         height: 250px;
     }
     .demo .galeria .proyectos .overlay .pagina .uno{
-        top: 75%;
+        top: 70%;
         right: 41%;
       
         
     }
     .demo .galeria .proyectos .overlay2 .documentos a{
-        top: 75%;
+        top: 70%;
         left: 30%;
        
     }
     .demo .galeria .proyectos .overlay .documento a {
-      top: 75%;
+      top: 70%;
         left: 50%;
      
     }
     .demo .galeria .proyectos .overlay .pagina a {
-        top: 75%;
+        top: 70%;
         right: 70%;
       
     }
