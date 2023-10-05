@@ -491,7 +491,7 @@
                 <form id="form" action="" class="formu">
                     <div class="cot">
                         <input name="nombre" type="text" placeholder="Nombre" required>
-                        <input name="telefono" type="text" placeholder="Número de contacto" pattern="^(?:[1-9]|[1-9][0-9]|100)$" required title="Ingresa un número valido max 15 caracteres">
+                        <input name="telefono" type="text" placeholder="Número de contacto" pattern="^[0-9]{1,20}$" required title="Ingresa un número valido max 20 caracteres">
                         <input  name="tema" type="text" placeholder="Tema" required>
                         <textarea name="texto" id="" cols="30" rows="8" placeholder="Mensaje" style="resize: none;"></textarea>
                         <button type="submit">Enviar Mensaje
